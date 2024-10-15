@@ -28,7 +28,7 @@ router.post('/', async(req, res)=>{
 
 // Lists users
 router.get('/', async (req, res)=>{
-    const allUsers = await prisma.user.findMany()
+    const allUsers = await prisma.user.findMany({include: {tweets: true}}) // use select to get only specific key values (where data is bulky)
     res.json(allUsers);
 });
 
