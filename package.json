@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/index.ts"
+    "start": "nodemon ./src/index.ts",
+    "dev": "tsx watch src/index.ts"
   },
   "author": "Edward Watts Adjei",
   "license": "ISC",
